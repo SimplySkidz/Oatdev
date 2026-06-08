@@ -123,7 +123,7 @@ def fetch_capdev_events(playfab_id, server_id=17):
         opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
         opener.addheaders = [('User-Agent', _UA)]
 
-        login_data = urllib.parse.urlencode({'username': 'SimplySkidz', 'password': 'Grover80'}).encode()
+        login_data = urllib.parse.urlencode({'username': 'SimplySkidz', 'password': 'hidden'}).encode()
         opener.open('https://cap-dev.notmyrealname.fyi/auth/login', data=login_data)
 
         events = []
